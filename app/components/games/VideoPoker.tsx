@@ -181,28 +181,33 @@ export default function VideoPoker() {
 
       <h1 className="text-4xl font-bold text-casino-gold mb-8">Video Poker</h1>
 
-      <div className="flex gap-4 mb-8">
+      <div className="flex gap-3 mb-8">
         {hand.map((card, index) => (
           <motion.div
             key={`${card.suit}-${card.value}-${index}`}
             onClick={() => toggleHold(index)}
-            className={`w-24 h-36 bg-white rounded-lg flex flex-col items-center justify-center cursor-pointer shadow-xl relative ${
-              held[index] ? 'ring-4 ring-casino-gold' : ''
+            className={`w-32 h-48 bg-white rounded-xl flex flex-col items-center justify-center cursor-pointer shadow-2xl relative border-4 ${
+              held[index] ? 'border-casino-gold ring-4 ring-casino-gold' : 'border-gray-300'
             }`}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, y: -10 }}
             whileTap={{ scale: 0.95 }}
-            initial={{ rotateY: 90 }}
-            animate={{ rotateY: 0 }}
-            transition={{ delay: index * 0.1 }}
+            initial={{ rotateY: 90, opacity: 0 }}
+            animate={{ rotateY: 0, opacity: 1 }}
+            transition={{ delay: index * 0.1, type: 'spring', stiffness: 200 }}
           >
-            <div className="text-4xl">{card.emoji}</div>
-            <div className={`text-2xl font-bold ${['♥️', '♦️'].includes(card.suit) ? 'text-red-600' : 'text-black'}`}>
+            <div className="text-6xl mb-2">{card.emoji}</div>
+            <div className={`text-3xl font-bold ${['♥️', '♦️'].includes(card.suit) ? 'text-red-600' : 'text-black'}`}>
               {card.value}
             </div>
             {held[index] && (
-              <div className="absolute -top-6 bg-casino-gold text-black px-2 py-1 rounded text-xs font-bold">
+              <motion.div
+                className="absolute -top-8 bg-casino-gold text-black px-3 py-1 rounded-lg text-sm font-bold shadow-lg"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+              >
                 HELD
-              </div>
+              </motion.div>
             )}
           </motion.div>
         ))}
