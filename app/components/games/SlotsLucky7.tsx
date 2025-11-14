@@ -135,21 +135,31 @@ export default function SlotsLucky7() {
 
       <h1 className="text-4xl font-bold text-casino-gold mb-8">🎰 Lucky 7 Slots</h1>
 
-      <div className="bg-gradient-to-b from-casino-red to-red-900 p-8 rounded-2xl shadow-2xl mb-8">
+      <div className="bg-gradient-to-b from-casino-red to-red-900 p-8 rounded-2xl shadow-2xl mb-8 border-4 border-casino-gold">
         <div className="flex gap-4 mb-4">
           {reels.map((symbol, index) => (
             <motion.div
               key={index}
-              className="w-32 h-32 bg-white rounded-xl flex items-center justify-center text-7xl shadow-inner"
-              animate={spinning ? { y: [0, -20, 0] } : {}}
-              transition={{ repeat: spinning ? Infinity : 0, duration: 0.2, delay: index * 0.1 }}
+              className="w-36 h-36 bg-gradient-to-br from-white to-gray-100 rounded-xl flex items-center justify-center text-8xl shadow-2xl border-4 border-gray-300"
+              animate={spinning ? {
+                y: [0, -30, 0],
+                scale: [1, 1.1, 1]
+              } : {
+                scale: 1
+              }}
+              transition={{
+                repeat: spinning ? Infinity : 0,
+                duration: 0.3,
+                delay: index * 0.1
+              }}
+              whileHover={!spinning ? { scale: 1.05 } : {}}
             >
               {symbol}
             </motion.div>
           ))}
         </div>
-        
-        <div className="bg-casino-gold text-black text-center py-2 rounded-lg font-bold">
+
+        <div className="bg-gradient-to-r from-casino-gold to-casino-darkGold text-black text-center py-3 rounded-lg font-bold text-lg shadow-lg">
           {playerName}'S LUCKY MACHINE
         </div>
       </div>

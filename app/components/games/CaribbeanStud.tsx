@@ -148,13 +148,13 @@ export default function CaribbeanStud() {
   }, [gameState, selectedAction, wager]);
 
   const CardComponent = ({ card, hidden = false }: { card: Card; hidden?: boolean }) => (
-    <div className="w-16 h-24 bg-white rounded-lg flex flex-col items-center justify-center shadow-xl">
+    <div className="w-20 h-32 bg-white rounded-lg flex flex-col items-center justify-center shadow-2xl border-2 border-gray-300">
       {hidden ? (
-        <div className="text-3xl">🂠</div>
+        <div className="text-4xl">🂠</div>
       ) : (
         <>
-          <div className="text-2xl">{card.emoji}</div>
-          <div className={`text-lg font-bold ${['♥️', '♦️'].includes(card.suit) ? 'text-red-600' : 'text-black'}`}>
+          <div className="text-3xl mb-1">{card.emoji}</div>
+          <div className={`text-xl font-bold ${['♥️', '♦️'].includes(card.suit) ? 'text-red-600' : 'text-black'}`}>
             {card.value}
           </div>
         </>

@@ -1,27 +1,30 @@
 # Jan-Erik's 40th Anniversary Casino 🎰
 
-A special casino game created to celebrate Jan-Erik's 40th birthday - Forty but still sexy!
+A spectacular casino game created to celebrate Jan-Erik's 40th birthday - Forty but still SEXY!
 
-## Features
+## ✨ Features
 
 - **Starting Balance**: €200
-- **Goal**: Win €2,000 across all casino games
+- **Goal**: Win €2,000 across all casino games to trigger VICTORY celebration!
 - **Wager Levels**: €0.20, €1, €2, €5
+- **Milestone Bonuses**: Earn bonus cash at €500, €1,000, and €1,500!
+- **Epic Victory Screen**: Spectacular celebration when reaching €2,000 goal
+- **Personalized Experience**: Jan-Erik's name throughout all games and messages
 
 ## Games Included
 
 ### Poker Games 🃏
-1. **Video Poker** - Classic 5-card draw with hold feature
-2. **Texas Hold'em** - Play against the dealer with community cards
-3. **Caribbean Stud Poker** - 5-card stud against the dealer
+1. **Video Poker** - Classic 5-card draw with hold feature and LARGE cards (32x48px)
+2. **Texas Hold'em** - Play against the dealer with community cards (24x36px cards)
+3. **Caribbean Stud Poker** - 5-card stud against the dealer (20x32px cards)
 
 ### Table Games
 4. **Craps** 🎲 - Classic dice game with Pass/Don't Pass bets
 5. **Roulette** 🎡 - European roulette with multiple betting options
 
 ### Slots Games 🎰
-6. **Lucky 7 Slots** - Traditional slot machine with lucky symbols
-7. **Fortune Wheel Slots** - Special 40th anniversary edition with birthday bonuses
+6. **Lucky 7 Slots** - Traditional slot machine with enhanced animations and larger reels
+7. **Fortune Wheel Slots** - Special 40th anniversary edition with birthday jackpot bonus!
 
 ## How to Play
 
@@ -63,15 +66,54 @@ npm start
 - Framer Motion (animations)
 - Lucide React (icons)
 
-## Special Features
+## 🎉 Special 40th Birthday Features
 
-- Personalized messages for Jan-Erik throughout the game
-- Automatic bonuses at milestone balances
-- Beautiful animations and transitions
-- Fully keyboard and mouse accessible
-- 40th birthday themed rewards and celebrations
+- **Welcome Screen**: Spectacular greeting when game loads
+- **Personalized Messages**: Jan-Erik's name in every win message and celebration
+- **Milestone Bonuses**:
+  - €500 → +€20 bonus
+  - €1,000 → +€40 bonus (40 for 40th birthday!)
+  - €1,500 → +€40 bonus
+- **Victory Celebration**: Epic animated celebration when reaching €2,000 goal with:
+  - Animated confetti explosion
+  - Trophy animation
+  - Personalized victory message
+  - "Forty, Fabulous, and VICTORIOUS!" proclamation
+- **Visual Polish**:
+  - Enhanced card sizes (as big as possible!)
+  - Smooth spring animations
+  - Golden borders and highlights
+  - No element overlap - meticulously planned spacing
+- **Birthday Theme Throughout**:
+  - "Forty but still sexy!" tagline
+  - 40th anniversary branding
+  - Birthday-themed Fortune Wheel with 🎂 jackpot
+
+## 🎮 Enhanced Gameplay
+
+- **Large, Beautiful Cards**: Poker cards sized for maximum visibility
+- **Smooth Animations**: Spring-based motion with Framer Motion
+- **Visual Feedback**: Cards lift on hover, held cards highlighted
+- **Professional Polish**: No overlaps, perfect spacing, terrific visuals
+- **Fully Accessible**: Complete keyboard and mouse support
+- **Real-time Updates**: Instant balance updates and feedback
+
+## 📋 Testing
+
+See [TESTING.md](./TESTING.md) for comprehensive testing guide with 20+ test categories.
+
+## 🎨 Visual Design
+
+- **Casino Color Scheme**:
+  - Green felt: #0a5f38
+  - Casino red: #c41e3a
+  - Gold accents: #ffd700
+  - Dark gold: #b8860b
+- **Typography**: Clean, modern sans-serif
+- **Animations**: 60 FPS smooth transitions
+- **Responsive**: Works on desktop, laptop, and tablet
 
 ---
 
-Made with ❤️ for Jan-Erik's 40th Anniversary
+Made with ❤️ for Jan-Erik's 40th Anniversary - Forty but still SEXY! 🎉
 
