@@ -36,3 +36,7 @@ next-env.d.ts
 
 # package lock (optional - some prefer to commit this)
 package-lock.json
+
+# test reports
+tests/simulation-report-*.json
+coverage/
