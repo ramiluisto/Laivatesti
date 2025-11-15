@@ -100,7 +100,24 @@ npm start
 
 ## 📋 Testing
 
-See [TESTING.md](./TESTING.md) for comprehensive testing guide with 20+ test categories.
+### Manual Testing
+See [TESTING.md](./TESTING.md) for comprehensive manual testing guide with 20+ test categories.
+
+### Automated Testing
+See [AUTOMATED-TESTING.md](./AUTOMATED-TESTING.md) for automated player simulation system that:
+- Simulates realistic gameplay across all games
+- Tracks detailed statistics and game balance
+- Generates comprehensive reports
+- Runs thousands of rounds in seconds
+
+Quick start:
+```bash
+# Run automated simulation
+npm run test:simulate
+
+# Run unit tests
+npm test
+```
 
 ## 🎨 Visual Design
 
